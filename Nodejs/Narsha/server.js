@@ -7,7 +7,7 @@ const port = 3000;
 var server = http
   .createServer(function (req, res) {
     if (req.method == "GET") {
-      fs.readFile("./na/index.html", "utf8", function (error, data) {
+      fs.readFile("./Narsha/index.html", "utf8", function (error, data) {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(data);
       });
