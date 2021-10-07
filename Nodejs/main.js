@@ -106,3 +106,30 @@
 // 다른 방법으론 그 오류를 클릭하고 빠른 수정을 누르면 다양한 방식의 해결 방안을 제시 해준다
 
 //--------------------------------------------------------------------
+
+
+// const overrides = 
+// {
+//     DATABASE_HOST: 'myhost.com',
+//     DATABASE_PASSWORD: 'mypassword',
+// }
+
+// const config = {
+//     DATABASE_HOST: 'default.host.com',
+//     DATABASE_PASSWORD : '****',
+//     DATABASE_USERNAME : 'myuser',
+//     ...overrides,
+// }
+
+// console.log(config)
+
+
+const user = 
+{
+    nickname : 'JH',
+    age : 22,
+    email : 'jh12@example.com',
+}
+
+const { nickname, ...personalData} = user
+console.log(personalData)
