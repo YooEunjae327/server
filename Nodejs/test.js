@@ -1,6 +1,6 @@
 // let http = require('http')
 
-const { log } = require("console");;
+
 
 // const server = http.createServer(function(request, response){
 //     response.writeHead(200,{'Content-Type':'text/html'})
@@ -23,4 +23,4 @@ const { log } = require("console");;
 
 // @ts-cheak
 
-
+console.log(1);
