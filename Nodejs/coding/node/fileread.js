@@ -1,6 +1,6 @@
-import { readFile } from 'fs';
+const fs = require('fs')
 
 
-readFile('Node.js/coding/sample.txt', (err, data) => {
+fs.readFile('Node.js/coding/sample.txt', (err, data) => {
   console.log(data);
 });

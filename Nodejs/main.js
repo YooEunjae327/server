@@ -123,4 +123,4 @@
 
 // console.log(config)
 
-console.log(1);
+console.log(1)
