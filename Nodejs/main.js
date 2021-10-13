@@ -134,4 +134,5 @@ const user =
 const { nickname, ...personalData} = user
 console.log(personalData)
 
-console.log(1);
+
+;;
