@@ -123,4 +123,3 @@
 
 // console.log(config)
 
-console.log(1);;
