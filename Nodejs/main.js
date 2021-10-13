@@ -123,16 +123,4 @@
 
 // console.log(config)
 
-
-const user = 
-{
-    nickname : 'JH',
-    age : 22,
-    email : 'jh12@example.com',
-}
-
-const { nickname, ...personalData} = user
-console.log(personalData)
-
-
-;;
+console.log(1);
