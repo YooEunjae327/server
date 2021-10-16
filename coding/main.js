@@ -8,18 +8,11 @@ const app = http.createServer(function(request,response){
     let title = queryData.id
     let pathname = parse(_url, true).pathname
 
-    if(_url == '/'){
-      title = 'Welcome'
-    }
-    if(_url == '/favicon.ico'){
-      response.writeHead(404);
-      response.end();
-      return;   
-    }
+  
 
     if(pathname === '/')
     {
-    readFile(`Nodejs/coding/data/${queryData.id}`, 'utf8', function(err, description)
+    readFile(`coding/data/${queryData.id}`, 'utf8', function(err, description)
     {
       let template = `
       <!doctype html>
