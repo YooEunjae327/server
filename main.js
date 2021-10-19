@@ -1,28 +1,24 @@
-/** 
-* VScode javaScript Development Setup
-*
-*             ｜ Formatting   ｜ Linting                    ｜ Type checking
-* ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-* Package     ｜ Prettier     ｜ eslint                     ｜ Typescript
-* ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-*             ｜              ｜ eslint-config-airbnb-base  ｜ @types/node
-* Additional­  ｜              ｜ eslint-config-prettier     ｜
-* dependencies｜              ｜ eslint-plugin-import       ｜
-*             ｜              ｜ eslint-plugin-node         ｜
-* ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-*             ｜              ｜                            ｜ 
-* Config file ｜ .prettierrc  ｜  .eslintrc.js              ｜  jsconfig.json
-*             ｜              ｜                            ｜ 
-* ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-* VScode      ｜              ｜                            ｜
-* extensions  ｜      O       ｜             O              ｜      X
-*             ｜              ｜                            ｜
-* ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-*/
-
-
- 
-
+/**
+ * VScode javaScript Development Setup
+ *
+ *             ｜ Formatting   ｜ Linting                    ｜ Type checking
+ * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+ * Package     ｜ Prettier     ｜ eslint                     ｜ Typescript
+ * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+ *             ｜              ｜ eslint-config-airbnb-base  ｜ @types/node
+ * Additional­  ｜              ｜ eslint-config-prettier     ｜
+ * dependencies｜              ｜ eslint-plugin-import       ｜
+ *             ｜              ｜ eslint-plugin-node         ｜
+ * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+ *             ｜              ｜                            ｜
+ * Config file ｜ .prettierrc  ｜  .eslintrc.js              ｜  jsconfig.json
+ *             ｜              ｜                            ｜
+ * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+ * VScode      ｜              ｜                            ｜
+ * extensions  ｜      O       ｜             O              ｜      X
+ *             ｜              ｜                            ｜
+ * ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+ */
 
 // Formtting, Linting, Type Checking
 // Formtting : Prettier
@@ -107,8 +103,7 @@
 
 //--------------------------------------------------------------------
 
-
-// const overrides = 
+// const overrides =
 // {
 //     DATABASE_HOST: 'myhost.com',
 //     DATABASE_PASSWORD: 'mypassword',
@@ -123,4 +118,4 @@
 
 // console.log(config)
 
-;;
+console.log(1)
