@@ -11,8 +11,10 @@ createServer((req, res) => {
       res.end(data)
     })
   } else if (path == '/show') {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    res.end('<h2>' + data + '</h2>')
+    req.on('data', (data) => {
+      res.writeHead(200, { 'Content-Type': 'text/html' })
+      res.end('<h2>' + data + '</h2>')
+    })
   }
 }).listen(3000, () => {
   console.log('Server running..')
