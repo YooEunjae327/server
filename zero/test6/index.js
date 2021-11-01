@@ -4,7 +4,7 @@ const app = express()
 
 app
   .use((req, res) => {
-    res.send('123121323121313212331223121')
+    res.end('<h1>HI</h1>')
   })
   .listen(3000, () => {
     console.log('Server running..')
