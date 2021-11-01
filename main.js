@@ -116,6 +116,29 @@
 //     ...overrides,
 // }
 
-// console.log(config)
+import express from 'express'
 
-console.log(1)
+const app = express()
+
+app.use(function (req, res, next) {
+  req.numb = 2
+  res.numb = 3
+  console.log('첫번째 미들웨어 입니다.')
+  next()
+})
+
+app.use(function (req, res, next) {
+  console.log('두번째 미들웨어 입니다.')
+  console.log(req.numb + ' + ' + res.numb + ' = ' + (req.numb + res.numb))
+  next()
+})
+
+app.use(function (req, res) {
+  console.log('세번째 미들웨어 입니다.')
+  res.sendStatus(200)
+  res.end('<h1>HEEELLLLOOO</h1>')
+})
+
+app.listen(3000, function () {
+  console.log('Server is Running at http://127.0.0.1:52300')
+})
