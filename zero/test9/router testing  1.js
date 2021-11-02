@@ -5,7 +5,7 @@ const routerA = express.Router()
 const routerB = express.Router()
 
 routerA.get('/index', (req, res) => {
-  res.send('<h1>router a: index</h1>1')
+  res.send('<h1>router a: index</h1>')
 })
 
 routerB.get('/index', (req, res) => {
