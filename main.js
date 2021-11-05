@@ -115,3 +115,35 @@
 //     DATABASE_USERNAME : 'myuser',
 //     ...overrides,
 // }
+
+// function solution(brown, yellow) {
+//     const result = []
+
+//     if (yellow >= 6) {
+//       result.push(8)
+//       result.push(Math.floor(yellow / 6 + 2))
+//     } else {
+//       result.push(yellow + 2)
+//       result.push(Math.floor(yellow / 6 + 3))
+//     }
+
+//     return result
+// }
+
+// const result = []
+// let brown = 24
+// let yellow = 25
+
+// if (yellow >= 6) {
+//   result.push(8)
+//   if (yellow % 6 === 0) {
+//     result.push(Math.floor(yellow / 6 + 2))
+//   } else {
+//     result.push(Math.floor(yellow / 6 + 3))
+//   }
+// } else {
+//   result.push(yellow + 2)
+//   result.push(Math.floor(yellow / 6 + 3))
+// }
+
+// console.log(result)
