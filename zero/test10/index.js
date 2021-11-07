@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 app.get('/login', (req, res) => {
   fs.readFile('./zero/test10/index.html', (err, data) => {
-    res.send(data)
+    res.send(data.toString())
   })
 })
 
