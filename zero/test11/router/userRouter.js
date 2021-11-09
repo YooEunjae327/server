@@ -1,7 +1,7 @@
 import express from 'express'
 const userRouter = express.Router()
 
-userRouter.get('/user', (req, res) => {
+userRouter.get('/', (req, res) => {
   res.send('user page')
 })
 
