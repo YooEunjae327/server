@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function appdatadel() {
+                document.maindel.submit()
+            }
+        </script>
+    </head>
+<table>
+    <tbody>
+        <th>이메일</th>
+        <th>이름</th>
+        <th>패스워드</th>
+        <th>학년</th>
+        <th>학반</th>
+        <th>번호</th>
+        <th>PRI key</th>
+        <form method="post" name="maindel">
+        <% for( var i in student)  { %>
+        <tr>
+            <td ><%= student[i].st_id %> </td>
+            <td><%= student[i].st_name %></td>
+            <td><%= student[i].st_pw %></td>
+            <td><%= student[i].st_grade %></td>
+            <td><%= student[i].st_class %></td>
+            <td><%= student[i].st_num %></td>
+            <td name = 'keycheak'><%= student[i].st_seq %></td>
+            <td><input type="button" value="삭제" onclick="appdatadel()" a></td>
+            </form>
+        </tr>
+        
+        <% } %>
+    </tbody>
+</table>
+</html>
