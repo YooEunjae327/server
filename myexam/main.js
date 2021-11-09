@@ -38,6 +38,8 @@ app.get('/readall', (req, res) => {
   })
 })
 
+app.post('/')
+
 app.listen(3000, () => {
   console.log('Server running...')
 })
