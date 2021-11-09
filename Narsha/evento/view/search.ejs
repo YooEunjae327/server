@@ -1,0 +1,12 @@
+<table>
+    <tbody>
+        <th>이메일</th>
+        <th>이름</th>
+        <% for( var i in student)  { %>
+        <tr>
+            <td><%= student[i].st_id %></td>
+            <td><%= student[i].st_name %></td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
