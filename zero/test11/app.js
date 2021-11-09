@@ -1,6 +1,6 @@
 import express from 'express'
-import homeRouter from './router/homeRouter.js'
 import userRouter from './router/userRouter.js'
+import homeRouter from './router/homeRouter.js'
 import contentRouter from './router/contentRouter.js'
 const app = express()
 
