@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>익스프레스 서버</title>
+  <script>
+    function search() {
+      document.searchfm.submit();
+    }
+
+    function searchall() {
+      document.readall.submit();
+    }
+
+    function add() {
+      document.cheak.submit()
+    }
+    
+    function dels() {
+      document.drop.submit()
+    }
+  </script>
+</head>
+<body>
+  <h1>익스프레스</h1>
+  <p>배워봅시다.</p>
+  <form method='get' name='readall' action='/user/readall'>
+    <input type='button' onClick='searchall()' value='전체 검색'></input>
+  </form>
+  <br>
+  <form method='get' name='searchfm' action='/user/read'>
+    <input type='text' name='st_name' placeholder="검색할 이름 입력">
+    <input type='button' onClick='search()' value='이름으로 검색'></input>
+  </form>
+  <br>
+  <h1>추가 하기</h1> 
+  <form method="post" name='cheak' action="/user/register">
+    <input type="email" name="st_id" placeholder="이메일 입력">
+    <input type="text" name="st_name" placeholder="이름 입력">
+    <input type="password" name="st_pw" placeholder="비밀 번호 입력">
+    <input type="number" name="st_grade" placeholder="학년 입력">
+    <input type="number" name="st_class" placeholder="반 입력"> 
+    <input type="number" name="st_num" placeholder="번호 입력"> 
+    <input type="button" onclick="add()" value="제출"></input>
+  </form>
+  <br>
+  <form method='post' name='drop' action='user/test'>
+    <input type="number" name="delsc" placeholder="제거할 PRI key 입력"> 
+    <input type="button" onclick="dels()" value="제거"></input> 
+  </form>
+</body>
+</html> 
