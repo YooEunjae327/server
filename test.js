@@ -45,15 +45,17 @@ const readline = require('readline')
     let b = 0
     for (let i = 1; i <= 60; i++) a.push(i)
 
-    for (let c = 1; c < line * 60 * 60; c++) {
+    for (let c = 1; c < line * 60 * 60; c += 60) {
       for (let s = 0; s < 60; s++) {
         if (a[s] === 3) b += 1
         else if (a[s] === 33) b += 2
       }
     }
-    console.log(v)
+    console.log(b)
     rl.close()
   }
 
   process.exit()
 })()
+
+123
