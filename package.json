@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "type": "module",
     "test": "jest",
     "server": "nodemon fastampus/src/main.js"
   },
